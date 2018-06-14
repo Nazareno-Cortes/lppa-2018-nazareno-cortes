@@ -1,0 +1,57 @@
+ls -lua  -> Muestra archivos usuarios y accesos (permisos)
+git init -> Inicio un repositorio en la carpeta donde estoy
+git status -> Ver el estado de la carpeta (commit es comprometer, asociado a un comentario - merge es juntar pull push forzado y pus comun)
+git log -> Log de todos los commits 
+git add 'archivo o carpeta' un . es la carpeta actual, y .. es la carpeta anterior.
+git commit -m (Mensaje)
+
+Para hacer cambios:
+git checkout -b "Comments" (el -b significa que estamos crenado, sin eso solamente nos movemos)
+git branch -a (Muestra las ramas actuales y pone en verde donde estoy, ademas muestra las de otras personas en rojo)
+git commit tatata y todo eso..
+git log --pretty=oneline -> Lo hace mas bonito.
+git log --all --decorate --online --graph
+
+----- Empezando con git comandos basicos -----
+Configurar git
+git config user.name ""
+git config user.email ""
+git config -l -> muestra configuraciones
+
+Proxy
+$ git config --global http.proxy http://10.11.200.253:80
+$ git config --global https.proxy https://10.11.200.253:80
+
+Apuntar repositorio local al remoto:
+git remote add origin https://github.com/lmalvasia/LPPA.git (lo saco de git)
+git remote -v Muestra los repositorios a los que podemos subir
+
+Push to origin
+git push origin master
+
+Clonar repositorios (abro bash y corro los comandos):
+git clone https://github.com/matiascantoni96/LPPA.git
+
+Añadir permisos para que otros puedan pushear.
+Una vez realizado esto, creo una nueva rama (git checkout -b "Rama1" y agrego los archivos que vamos a pushear.
+git add . 
+git commit -m "Para matias"
+git push origin Rama1 (pusheo la rama 1 al remoto)
+De esta forma, agrego una rama al repositorio clonado y la subo al remoto.
+
+Si quiero obtener la rama o algo nuevo en mi propio repositorio local tengo que hacer lo siguiente:
+git branch -> Reviso las ramas que hay, esguramente falte la que agrego otra persona.
+git fecth -> Revisa el repositorio remoto y muestra lo que hay nuevo, en este caso, mi compañero agrego una Rama_1
+git pull origin master -> Hago un pull de la master, y me fijo si hay algun cambio.
+git checkout -b Rama_1 origin/Rama_1 creo la rama y me traigo todo lo que hay en el remoto.
+Fin
+
+
+
+
+Abrimos la consola y atom juntos.
+Dentro de la consola ponemos "cd Desktop"
+Creo la carpeta con mkdir "Nombre de la carpeta"
+cd "Nombre de la carpeta"
+Limpiar la ventana entera "cls"
+Luegoa abrimos atom en la carpeta donde creamos atom 

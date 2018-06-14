@@ -1,5 +1,5 @@
 html,body{
-  background-color: #333;
+  background-color: #444;
 }
 
 .game{
@@ -15,8 +15,8 @@ height: 100vh;
   flex-wrap: wrap;
   background-color: #ccc;
   border: 2px solid #999;
-  width: 108px;
-  height: 108px;
+  width: 180px;
+  height: 180px;
 }
 
 .board li {
@@ -33,4 +33,7 @@ height: 100vh;
 }
 button{
   margin: 5px;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
 }
