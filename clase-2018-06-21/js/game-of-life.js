@@ -33,6 +33,10 @@ var GameOfLife = {
       for (var j = 0; j < row.length; j++) {
         var cell = row[j];
         var willBeAlive = GameOfLife.applyRule(a, i, j);
+        if (willBeAlive) {
+          b[i][j] = true;
+
+        } // fin if willBeAlive
       }
     } // fin for currentBoard
   }, // fin getNextStep
