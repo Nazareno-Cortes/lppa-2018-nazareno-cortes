@@ -56,6 +56,9 @@ var GameOfLife = {
 
     var rule1 = !cell && count >= 3;
     var rule2 = cell && (count === 2 || count === 3);
+    /*
+    
+    */
 
     return rule1 || rule2;
   }
